@@ -1,6 +1,6 @@
 {
   "name": "server",
-  "module": "index.ts",
+  "module": "src/index.ts",
   "type": "module",
   "private": true,
   "devDependencies": {
@@ -8,8 +8,8 @@
     "@types/express": "^5.0.3"
   },
   "scripts": {
-    "dev": "bun run --watch index.ts",
-    "build": "bun build index.ts --target bun --minify --outdir ../../prod"
+    "dev": "bun run --watch src/index.ts",
+    "build": "bun build src/index.ts --target bun --minify --outdir ../../prod"
   },
   "peerDependencies": {
     "typescript": "^5"
