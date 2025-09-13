@@ -1,0 +1,21 @@
+{
+  "name": "modern-full-stack-starter",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "bun index.ts",
+    "build": "bun run --cwd packages/client build && bun run --cwd packages/server build",
+    "start": "bun --cwd prod index.js"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "concurrently": "^9.2.1"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
